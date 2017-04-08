@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Login from '../components/Login';
 import Search from '../components/Search';
 import Profile from '../components/profile';
+import Businesses from '../components/visitor/Businesses';
+import Activities from '../components/visitor/Activities';
 import NavBar from '../components/NavBar';
 
 
@@ -26,6 +28,16 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: Search
+    },
+    {
+      path: '/businesses',
+      name: 'businesses',
+      component: Businesses
+    },
+    {
+      path: '/activities',
+      name: 'activities',
+      component: Activities
     },
     {
       path: '/profile',

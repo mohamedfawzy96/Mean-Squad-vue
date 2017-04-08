@@ -17,7 +17,8 @@
           <ul class="nav navbar-nav">
             <li class="active"><router-link router-link to='profile'>Profile</router-link></li>
             <li><router-link to='/search' >Search</router-link></li>
-            <li><router-link to='/login' >Logout</router-link></li>
+            <li><router-link to='/businesses' >Businesses</router-link></li>
+            <li><router-link to='/activities' >Activities</router-link></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

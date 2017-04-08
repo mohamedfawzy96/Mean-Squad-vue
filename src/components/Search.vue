@@ -57,7 +57,7 @@ export default {
     this.$http.get('https://jsonplaceholder.typicode.com/users')
     .then(function(response){
       this.users = response.data;
-      //console.log(this.users);
+      console.log(response.data);
     })
   }
 }

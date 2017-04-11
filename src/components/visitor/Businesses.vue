@@ -10,6 +10,11 @@
 
 <script>
     export default {
+        watch: {
+            '$route' (to, from) {
+
+            }
+        },
         name: 'test',
         data() {
             return {
@@ -17,13 +22,11 @@
                 businesses: []
             }
         },
-
         created:function(){
             //When you want to make a get request use this method and put the url u want to use
             this.$http.get('http://localhost:8080/businesses')
             .then(function(response){
-            this.businesses = response.data.data[0];
-            console.log(this.businesses[0].name);
+            this.businesses = response.data.data.businesses;
             })
         }
     }
